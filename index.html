@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Is DEF CON Canceled?</title>
+  <style type="text/css">
+    @font-face {
+      font-family:'ration_oneregular';
+      src:url('./images/fonts/ration-regular-webfont.eot');
+      src:url('./images/fonts/ration-regular-webfont.eot?#iefix') format('embedded-opentype'), url('./images/fonts/ration-regular-webfont.woff') format('woff'), url('./images/fonts/ration-regular-webfont.ttf') format('truetype'), url('./images/fonts/ration-regular-webfont.svg#rationale_oneregular') format('svg');
+      font-weight:normal;
+      font-style:normal;
+    }
+    @font-face {
+      font-family:'bebas_neueregular';
+      src:url('./images/fonts/bebasneue-webfont.eot');
+      src:url('./images/fonts/bebasneue-webfont.eot?#iefix') format('embedded-opentype'), url('./images/fonts/bebasneue-webfont.woff') format('woff'), url('./images/fonts/bebasneue-webfont.ttf') format('truetype'), url('./images/fonts/bebasneue-webfont.svg#bebas_neueregular') format('svg');
+      font-weight:normal;
+      font-style:normal;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      color: #999;
+      background-color: black;
+      font: .9em/1.4em "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    main {
+      width: 1000px;
+      margin: auto;
+    }
+    header {
+      height: 465px;
+      position: relative;
+      background-image: url('./images/dcsite-bg-ret.png');
+      background-repeat: no-repeat;
+      background-position: center top;
+    }
+    header > div {
+      top: 220px;
+      color: #9cf;
+      width: 100%;
+      position: absolute;
+      box-shadow: 0 1px 0 #333;
+      border-radius: 3px;
+      background-color: rgba(0,0,0,0.5);
+      font: 2em 'bebas_neueregular', Impact, Helvetica, sans-serif;
+    }
+    header > div > h1 {
+      text-align: center;
+    }
+    article {
+      background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(134, 136, 146, 0.5));
+      background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(134, 136, 146, 0.5));
+      background: -webkit-gradient(linear, left bottom, left top, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(134, 136, 146, 0.5)));
+      background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(134, 136, 146, 0.5));
+      background: linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(134, 136, 146, 0.5));
+      border-top: 1px #777 solid;
+      border-radius: 4px;
+    }
+    article > h1 {
+      font: 3.8em 'bebas_neueregular', Impact, Helvetica, sans-serif;
+      text-align: center;
+      text-shadow: -1px 1px 0 #666;
+      line-height: 5em;
+      letter-spacing: .1em;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div>
+        <h1>Is DEF CON Canceled?</h1>
+      </div>
+    </header>
+    <article>
+      <h1 id="trololololo">YES.</h1>
+    </article>
+  </main>
+  <script type="text/javascript">
+    var trololololo = document.getElementById('trololololo');
+    var never = function() { trololololo.innerHTML = '.&nbsp;&nbsp;'; }
+    var gonna = function() { trololololo.innerHTML = '&nbsp;.&nbsp;'; }
+    var give = function() { trololololo.innerHTML = '&nbsp;&nbsp;.'; }
+    var breakdown = [never, gonna, give];
+    var you = function() { trololololo.innerText = 'YES.'; }
+    var up = function() { _ = setTimeout(function() {
+      breakdown[0](); breakdown.push(breakdown.shift(1));
+      Math.random(1) > 0.95 ? you() : up();
+    }, Math.random(1) * 500);}
+    never(); gonna(); give(); up();
+  </script>
+</body>
+</html>
