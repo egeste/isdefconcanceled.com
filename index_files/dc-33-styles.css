@@ -1,0 +1,975 @@
+/* CSS Document */
+
+
+/***
+    The new CSS reset - version 1.8.2 (last updated 23.12.2022)
+    GitHub page: https://github.com/elad2412/the-new-css-reset
+***/
+
+
+*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+    all: unset;
+    display: revert;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a, button {
+    cursor: revert;
+    color: #cb4;
+}
+
+a:hover {
+    color: rgba(226,194,249,1.00)
+}
+
+ol, ul, menu {
+    list-style: none;
+}
+
+img {
+    max-inline-size: 100%;
+    max-block-size: 100%;
+    border-radius: 20px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+input, textarea {
+    -webkit-user-select: auto;
+}
+
+textarea {
+    white-space: revert;
+}
+
+meter {
+    -webkit-appearance: revert;
+    appearance: revert;
+}
+
+pre {
+    all: revert;
+}
+
+::placeholder {
+    color: unset;
+}
+
+
+:where([hidden]) {
+    display: none;
+}
+
+:where([contenteditable]:not([contenteditable="false"])) {
+    -moz-user-modify: read-write;
+    -webkit-user-modify: read-write;
+    overflow-wrap: break-word;
+    -webkit-line-break: after-white-space;
+    -webkit-user-select: auto;
+}
+
+:where([draggable="true"]) {
+    -webkit-user-drag: element;
+}
+
+
+:where(dialog:modal) {
+    all: revert;
+}
+
+/* end reset */
+
+/* tags */
+
+.museo {
+    font-family: 'museo', Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"
+}
+
+.atkinson-hl {
+    font-family: 'atkinson-hl', Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"
+}
+
+.lato {
+    font-family: 'Lato', Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'atkinson-hl', "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+    padding: 15px 10px 15px; 
+    line-height: 1.1em;
+    text-align: left;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.8em;
+}
+
+h3 {
+    font-size: 2.5em;
+}
+
+h4 {
+    font-size: 2.1em;
+}
+
+h5 {
+    font-size: 1.8em;
+}
+
+h6 {
+    font-size: 1.5em;
+}
+
+body{
+
+   font: 18px  'lato', "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+   line-height: 1.5em;
+   background: rgba(0,0,0,1.00);
+   color: #ccc;
+}
+
+strong {
+    font-weight: bold;
+    color: #fff;
+    
+}
+
+body p {
+    margin: 10px 15px 20px;
+}
+
+header{
+    
+    min-height: 200px;    
+    overflow: visible;
+}
+
+header h1, header h2{
+  display: none;
+}
+
+nav{
+    width: 70%;
+    min-width: 550px;
+    float: right;
+    background-color: gray;
+    vertical-align: bottom;
+    z-index: 99;
+}
+
+main{
+}
+
+section {
+    background-color: rgba(0,0,0,0.55); 
+    
+}
+
+aside{
+}
+
+footer{
+    
+}
+
+
+/* end tags */
+
+/* id */
+
+#skiptocontent a{
+    padding:6px;
+    position:absolute;
+    top:-40px;
+    left:0px;
+    color:white;
+    border-bottom-right-radius:3px;
+    background:transparent;
+    transition:top 1s ease-out, background 1s linear;
+    z-index:100;
+}
+
+#skiptocontent a:focus{
+    position:absolute;
+    left:0px;
+    top:3px;
+    background:#222;
+    outline:0;
+    -webkit-transition:top .1s ease-in, background .5s linear;
+    transition:top .1s ease-in, background .5s linear;
+}
+
+#container{
+    background: url("dc-33-header.webp") top center/contain no-repeat; 
+    max-width: 1600px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+#main-content{
+    display: grid;
+    grid-template: repeat(4) / 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+
+#home-content{
+    display: grid;
+    grid-template: repeat(4) / 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+#home-content section {
+    overflow: hidden;
+   
+}
+
+#current {
+    display: none;
+}
+
+#current h3 {
+    display: none;
+}
+
+#index {
+    min-width: 250px;
+}
+
+
+#right-sidebar{
+    border: none;
+    background-color: rgba(0,0,0,0.50)
+    
+}
+
+
+
+#right-sidebar img.dcu {
+    width: auto;
+    height: auto;
+    border-radius: 3px;
+}
+
+
+#nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    right: -1640px;
+    transition: transform .3s ease-in-out;
+    overflow-y: scroll;
+    border-radius: 3px;
+    background-color: rgba(0,0,0,0.80)
+    }
+
+#nav:target {
+      transform: translateX(-1340px);
+    }
+
+/* end id */
+
+/* classes */
+
+
+
+.header-logo {
+    max-width: 150px;
+    height: auto;
+    display: block;
+    position: relative;
+    margin: 0 0 0 20px;
+    padding-top: 50px;
+    z-index: 1;
+}  
+
+.main-nav{
+    font-family: 'Lato', "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+    display: grid;
+    grid-template: repeat(4) / 100vh;
+    grid-gap: 20px;
+    padding: 20px;
+    margin-top: -20px
+}
+
+.main-nav li{
+    
+    font-size: 1.3rem;
+    line-height: 1.3em;
+    font-weight: bold;
+    
+    
+}
+
+.main-nav li ul.sub-nav{
+    display: block;
+    font-size: 1rem;
+    
+
+}
+
+.sub-nav li{
+    font-family: 'lato', "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+    font-weight: normal;
+}
+
+.nav-icon {
+    float: right;
+}
+
+.nav-icon, .close-icon {
+    margin: 1em;
+    width: 40px;
+}
+
+.close-icon:after, .nav-icon:after, 
+.close-icon:before, .nav-icon:before, 
+.close-icon div, .nav-icon div {
+    background-color: #FFF;
+    border-radius: 1px;
+    content: '';
+    display: block;
+    height: 5px;
+    margin: 7px 0;
+    transition: all .2s ease-in-out;
+}
+
+.close-icon:before {
+    transform: translateY(12px) rotate(45deg);
+}
+
+.close-icon:after {
+    transform: translateY(-12px) rotate(-45deg);
+}
+
+.close-icon div {
+    transform: scale(0);
+}
+
+.footer-nav{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-gap: 20px;
+    padding: 20px;
+    margin-left: 15px
+}
+
+.footer-nav li{
+    font-size: 1rem;
+    font-weight: bold;
+    
+    
+}
+
+.footer-nav li ul.sub-nav{
+    display: block;
+}
+
+.sub-nav li{
+    font-size: .9em;
+    line-height: 1.2em;
+    font-weight: normal;
+}
+
+.content-box {
+    background: linear-gradient(to top left, #111, #333) .9;
+    border-radius: 3px;
+    transition: all .2s ease-in-out;
+    text-align: center;
+}
+
+.content-box-title {
+    font-family: 'museo', Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    text-align: left;
+    }
+.content-box-title a{
+    color: #283;
+    }
+
+.sb-box-title {
+    text-align: center;
+    font-size: 2em
+}
+
+
+.post {
+   margin-bottom: 130px 
+}
+
+.post-title {
+    margin: 10px 5px;
+    text-align: left;
+    line-height:.9em
+    
+}
+
+.byline {
+    margin: -25px 0 20px 12px;
+    background-color: rgba(255,255,255,0.35);
+    border-radius: 2px;
+    padding: 0 5px;
+    color: #000;
+    
+}
+
+.post-image {
+    width: 30%;
+    height: auto;
+    float: left;
+    margin: 0 15px 20px;
+}
+
+.scale {
+    max-width: 85%;
+    min-width: 150px;
+    height: auto;
+    margin: 10px 15px 0;
+}
+
+.logo { 
+    display: block;
+    min-width: 100px;
+    max-width: 350px;
+    height: auto;
+    margin: -20px auto;
+}
+
+.calendar-entry {
+    display: grid;
+    grid-template: 1fr / 65px 4fr;
+    margin: 0 15px 30px 5px;
+    
+}
+
+.start-date {
+    display: grid;
+    grid-template: 1fr 50% / 1fr;
+    background: linear-gradient(to top left, #F8A28B, #ffac11);
+    color: black;
+    margin: 0 12px;
+    border-radius: 3px;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1em;
+    height: 65px;
+    line-height: 2em;
+
+        
+}
+
+.day {
+    font-family: 'atkinson-hl', "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+    display: flex;
+    font-size: 1.5em;
+    width: 100%;
+    height: 100%;
+    padding: 0 5px;
+    justify-content: center;
+    align-items: center;
+    color: Black;
+    
+}
+
+.month {
+    font-family: 'atkinson-hl', "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+
+.event-info a {
+    font-weight: 500;
+    font: 1em 
+}
+
+.event-info {
+    line-height: 1.3em;
+}
+
+
+.dcu-holder {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin: 0 15px;
+    
+}
+
+.dcu-holder a {
+    font-size: 1em;
+    text-align: center;
+    line-height: 1em;
+}
+
+.social-holder {
+    display: grid;
+    grid-template: 100% / repeat(5, 1fr);
+    grid-gap: 10px;
+    margin: 0px auto;
+    padding-left: 20px
+    
+}
+
+.icon-holder {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin: 0 20px;
+    
+}
+
+.accordion > input[type="checkbox"] {
+  position: absolute;
+  left: -100vw;
+}
+
+.accordion .content {
+  overflow-y: visible;
+  height: auto;
+  transition: height 0.3s ease;
+}
+
+.accordion > input[type="checkbox"]:checked ~ .content {
+  height: 0;
+  overflow: hidden;
+}
+
+.accordion label {
+  display: block;
+}
+
+/*
+ Styling
+*/
+
+
+.accordion {
+  margin-bottom: 0;
+}
+
+.accordion > input[type="checkbox"]:checked ~ .content {
+  border-top: 0;
+}
+
+.accordion .handle {
+  margin: 0;
+
+}
+
+.accordion label {
+  color: rgba(130,243,229,1.00);
+  cursor: pointer;
+  font-weight: normal;
+  padding: 5px;
+}
+
+.accordion label:hover,
+.accordion label:focus {
+
+}
+
+.accordion .handle label:before {
+  content: hidden;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.accordion > input[type="checkbox"]:checked ~ .handle label:before {
+  content: hidden;
+}
+
+.logo {
+  width: 100%;
+  height: auto;  
+  padding: 25px 0 0 0px;
+}
+
+.copyright {
+  margin: 0 auto;
+  text-align: center;
+}
+
+header h2.page-title {
+  display: block;
+  color: #cb4;
+  text-align: left;
+  font-family: 'museo', "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"; 
+  margin: 20px 0 0 20px;
+  background-color: rgba(0,0,0,0.650)
+}
+
+.q {
+  font-family: 'lato', "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"; 
+  margin-bottom: 0;
+  color: #0a7985;
+
+}
+
+.a {
+  margin-bottom: 40px;
+}
+
+.page-index-entry {
+text-align: left;
+}
+
+
+.talk {
+  min-height: 350px
+}
+
+
+.bio-image {
+    width: 30%;
+    min-width: 200px;
+    height: auto;
+    float: left;
+    margin: 15px 15px 25px;
+}
+
+.actions {display: inline-block}
+
+
+.vendor-name {
+    text-align: left;
+    color: #6ce;
+    margin-bottom: -20px;
+    background-color: rgba(0,0,0,0.60)
+}
+
+.vendor-name a{
+    color: #6ce;
+} 
+
+.vendor-logo {
+    width: 300px;
+    background-color: black;
+    padding:10px;
+    float: right;
+    margin: 20px 15px 10px;
+}
+
+.vendor-logo-wh {
+    width: 300px;
+    background-color: white;
+    padding:10px;
+    float: right;
+    margin: 20px 15px 10px;
+}
+
+.vendor-square {
+    width: 175px;
+}
+
+.vendor-url {
+}
+
+.exhibitor-level {
+    margin: -10px 15px
+}
+
+
+ul.schedule-row {
+    display: grid;
+    grid-auto-flow: row;
+}
+
+.schedule-row li {
+    background-color: #333333;
+    list-style-type: none;
+    margin: 0;
+}
+
+.sched-title {
+    font-size: 1.5em;
+    text-align: left;
+    margin: -20px 0 0 5px;
+    
+}
+
+.track {
+    background-color: #000;
+    padding: 10px;
+    font: 1.5em 'atkinson-hl', Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+li.sched-fill {
+    display: none;
+}
+
+.time {
+    color: #64d576 ;
+    font-size: 2em;
+    margin-bottom: 10px;
+    font-family: 'atkinson-hl', Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+
+.track-name {
+    display: block;
+    font-family: 'atkinson-hl', Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    color: #000;
+    background-color: #555;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.thursday {
+    
+}
+
+
+.sched-speaker{
+    color: #4999e5
+}
+
+
+.talk {
+    
+}
+
+.talk-title {
+    text-align: left;
+    color: #283;
+}
+
+.time-room {
+    margin-top: -10px
+}
+
+.speaker {
+    font-size: 1.6em;
+    text-align:  left;
+    margin: -20px 0 0 5px;
+    color: #6ce;
+}
+
+.speaker-bio {
+    font-style: italic;
+}
+
+.speaker-title {
+    font: .7em 'atkinson-hl', "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+    color: #eee;
+
+}
+
+.speaker-affiliation {
+    font: .7em 'atkinson-hl', "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+    color: #ffac11;
+
+}
+
+.speaker-index {
+    font: 1.4em 'atkinson-hl', Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+
+/* end classes */
+
+@media only screen and (max-width:1024px) and (min-width:801px) {
+    
+    .content-box-title {
+        font-size: 1.8em;
+    }
+    
+    .post-title {
+        font-size: 2rem;
+        
+    }
+    
+    .sb-box-title {
+        font-size: 1.7em;
+        text-align: center;
+    }
+}
+
+
+@media only screen and (min-width:800px) {
+    
+
+main {
+       margin-top: -600px;
+ 
+}
+    
+#container{
+    background: url("dc-33-header.webp") top center no-repeat; 
+    display: grid;
+    max-width: 1600px;
+    margin: 0 auto;
+    height: 100%;
+}
+    
+header{
+    height: 900px;
+    overflow: visible;
+    }
+    
+
+.nav-icon, .close-icon {
+    
+}
+    
+#current {
+    display: inline-block;
+    min-width: 250px;
+}
+
+#current h3 {
+    display: none;
+}
+
+#index {
+    min-width: 250px;
+}
+
+    
+.main-nav{
+    grid-template: repeat(4) / 100vh;
+}
+    
+.footer-nav{
+    grid-template: 100% / repeat(5, 1fr);
+}
+    
+        
+#home-content{
+    grid-template: 1fr /  1fr 3fr 1fr;
+    overflow: scroll;
+}
+    
+#page-content{
+    grid-template: 1fr /  1fr 3fr 1fr;
+    overflow: scroll;
+
+}
+    
+#main-content{
+    grid-template: 1fr /  2fr 1fr;
+    overflow: scroll;
+}
+    
+    
+#page-content ul, #home-content ul{
+    padding-left: 30px;
+    list-style-type: disc ;
+}
+    
+#page-content ol, #home-content ol{
+    padding-left: 30px;
+    list-style: decimal;
+}
+    
+
+.post-title {
+    margin: 0px 0 5px;
+    display: block;
+        
+}
+    
+.dcu-holder {
+    grid-template-columns:  repeat(3, 1fr); 
+    grid-gap: 35px;
+    margin: 0 auto;
+}
+    
+.social-holder {
+    grid-template: 100% / repeat(5, 1fr);
+    grid-gap: 20px;
+    padding: 0;
+}
+    
+.content-box {
+    height: 100%;
+    text-align: center
+    
+}
+    
+.sb-box-title {
+    margin-top: 20px;
+    font-size: 2em;
+    
+    }
+ 
+ .header-logo {
+    max-width: 260px;
+    display: block;
+    position: relative;
+    margin: 0 0 0 20px;
+    padding-top: 0;
+}  
+ 
+
+.accordion > input[type="checkbox"]:checked ~ .content {
+  height: auto;
+  overflow: visible;
+}
+    
+header h2.page-title {
+  text-align: center;    
+}
+ul.schedule-row {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    margin: 0;
+
+}
+    
+ul.schedule-row li{
+    margin: 0;
+
+} 
+li.sched-fill {
+    display: inline-block;
+
+}
+    
+/*.talk h4 {
+    font-size: 2em;
+    color: 
+}
+*/    
+footer {
+}
+    
+}
+
+
+
+@font-face {
+  font-family: 'museo';
+  src: url("Museo700-Regular.otf") format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'atkinson-hl';
+  src: url("atkinson-hl.woff2") format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'lato';
+  src: url("lato.woff2") format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  font-display: swap;
+}
